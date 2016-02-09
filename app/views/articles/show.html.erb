@@ -1,0 +1,5 @@
+<h2><%= raw(@markdown.render(@article.title)) %></h2>
+<p><%= raw(@markdown.render(@article.content)) %></p>
+<p><%= link_to "Back to articles", articles_path %></p>
+<p><%= link_to "Update", edit_article_path(@article) %></p>
+<p><%= link_to "Delete", article_path(@article), method: :delete %></p>
